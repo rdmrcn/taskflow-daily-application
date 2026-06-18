@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased bg-anthracite-950 text-slate-200;
+  }
+
+  ::selection {
+    @apply bg-accent-600/40 text-white;
+  }
+
+  input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(0.7) sepia(1) saturate(3) hue-rotate(100deg);
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-anthracite-850/80 backdrop-blur-xl border border-anthracite-600/50 shadow-card;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl bg-anthracite-900/60 border border-anthracite-600/60
+      text-slate-100 placeholder:text-slate-500
+      focus:outline-none focus:ring-2 focus:ring-accent-500/50 focus:border-accent-600/50
+      transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-xl bg-gradient-to-r from-accent-700 to-accent-600
+      text-white font-semibold shadow-glow-sm
+      hover:from-accent-600 hover:to-accent-500
+      disabled:opacity-40 disabled:cursor-not-allowed disabled:shadow-none
+      transition-all duration-200;
+  }
+
+  .btn-ghost {
+    @apply px-4 py-2 rounded-xl border border-anthracite-600/60 text-slate-300 text-sm font-medium
+      hover:bg-anthracite-700/50 hover:border-anthracite-500/60 hover:text-white
+      transition-all duration-200;
+  }
+}
