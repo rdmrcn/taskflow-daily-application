@@ -1,44 +1,70 @@
-# TaskFlow — Internship Project
+# TaskFlow Daily Manager
 
-A CRUD-based todo application built with React and JavaScript.
+TaskFlow Daily Manager is a responsive React-based task management web application developed as an internship project. The application allows users to create, organize, update, complete, filter, search, and delete daily tasks through a clean and modern interface.
 
-## Tech Stack
+## Live Demo
 
-- **React 18** — Modern JavaScript library
-- **Vite** — Fast development environment
-- **Tailwind CSS** — Utility-first CSS framework
-- **localStorage** — Data persistence
+https://taskflowdaily-application.netlify.app/
+
+## Project Overview
+
+TaskFlow Daily Manager is designed to help users manage daily tasks efficiently. The project focuses on CRUD operations, component-based React structure, local data persistence, and responsive UI design.
+
+The application stores task data locally in the browser using localStorage, so users can continue managing their tasks after refreshing the page.
+
+## Technologies Used
+
+- React 18
+- JavaScript
+- Vite
+- Tailwind CSS
+- localStorage
+- WebStorm 2024.3.2
+
+## Main Features
+
+- Add new tasks
+- Add optional task details
+- Set priority level
+- Set due date
+- Mark tasks as completed
+- Edit existing tasks
+- Delete individual tasks
+- Clear completed tasks
+- Search tasks
+- Filter tasks by All, Active, and Completed
+- Sort tasks by newest or other available order options
+- Progress tracking with task statistics
+- Responsive modern dark UI
+- Browser-based local data storage
+
+## CRUD Operations
+
+| Operation | Description |
+|---|---|
+| Create | Add new tasks with title, description, priority, and due date |
+| Read | Display all tasks with filtering, search, and sorting |
+| Update | Edit tasks and change completion status |
+| Delete | Remove tasks individually or clear completed tasks |
 
 ## Project Structure
 
-```
+```txt
 src/
-├── components/     # Reusable UI components
+├── components/
 │   ├── Header.jsx
 │   ├── TodoForm.jsx
 │   ├── TodoItem.jsx
 │   ├── TodoList.jsx
 │   └── TodoFilter.jsx
-├── pages/          # Page components
+├── pages/
 │   └── HomePage.jsx
-├── interfaces/     # Data models and type definitions
-│   └── todo.js
-├── hooks/          # Custom React hooks
+├── interfaces/
+│   └── Todo.js
+├── hooks/
 │   └── useTodos.js
-├── utils/          # Helper functions
+├── utils/
 │   └── storage.js
 ├── App.jsx
 ├── main.jsx
 └── index.css
-```
-
-## CRUD Operations
-
-| Operation | Description |
-|-----------|-------------|
-| **Create** | Add new tasks (title + description) |
-| **Read** | List all tasks with filtering and search |
-| **Update** | Edit tasks, mark as complete |
-| **Delete** | Delete individual tasks or clear completed |
-
-##USe via: https://taskflowdaily-application.netlify.app/
