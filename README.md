@@ -68,3 +68,9 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── index.css
+
+## Author
+
+© 2026 Reha Demircan
+
+Developed as an internship project using React, JavaScript, Vite, and Tailwind CSS.
