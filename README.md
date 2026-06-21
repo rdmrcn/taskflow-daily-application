@@ -8,6 +8,9 @@ https://taskflowdaily-application.netlify.app/
 
 ## Project Overview
 
+<img width="1085" height="1156" alt="Screenshot 2026-06-21 134931" src="https://github.com/user-attachments/assets/ea703307-ef08-41a4-93dd-9b86bd3ea1e4" />
+
+
 TaskFlow Daily Manager is designed to help users manage daily tasks efficiently. The project focuses on CRUD operations, component-based React structure, local data persistence, and responsive UI design.
 
 The application stores task data locally in the browser using localStorage, so users can continue managing their tasks after refreshing the page.
